@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 25;
+    background-color: rgb(55, 55, 55);
+    font-family: 'Baloo', sans-serif;
+    overflow: hidden;
+}
+
+.noselect {
+    user-select: none;
+}
+
+.hardwaffl3 {
+    border: double 20px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 255, 255),#242424);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hardwaffl3:hover {
+    transform: scale(1.1);
+}
+
+.hardwaffl3-2 {
+    background-color: #242424;
+    border: 5px solid rgb(193, 193, 193);
+    border-radius: 500px;
+    margin-top: 25px;
+    padding: 1px 50px;
+}
+
+.border {
+    border: 10px solid rgb(163, 163, 163);
+    border-radius: 5%;
+    display: grid;
+    justify-content: center;
+    width: 500px;
+    padding: 25px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: white;
+}
