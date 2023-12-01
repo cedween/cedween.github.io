@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>@HardWaffl3's Profile Card</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css"></link>
+    </head>
+
+    <body style="margin: auto;">
+
+        <div class="background"></div>
+        <div class="background background-2"></div>
+        
+        <div class="border" style="scale: 65%;">
+
+            <div style="text-align: center;" class="noselect">
+                <img class="hardwaffl3" src="/images/HardWaffl3_Boi.jpg" alt="@HardWaffl3" style="width:250px; height:250px;">
+            </div>
+    
+            <div style="text-align: center; font-size: 100%;">
+                <div class="hardwaffl3-2">
+                    <h1>@HardWaffl3</h1>
+                </div>
+            </div>
+
+            <div style="text-align: center; font-size: 150%;" class="noselect">
+                    <h5>I am Nikolai. I like to deal with IT issues</h5> 
+
+                    <h5>I do networking, database design(basics),
+                    vector graphics, some music, web design, etc.</h5>
+
+                    <h5>I must admit that I also feel in me, besides this IT man, also the soul of an artist, so you can also write to me about any convenient matter. I am also happy to provide psychological support from experience x)</h5>
+
+                    <h5>If you would like to get to know me, even if it's about a potential collaboration, you can feel free to contact me through any of the given media, to which you will find links in the buttons below.</h5>
+            </div>
+
+            <div style="text-align: center; word-spacing: 500%;" class="noselect">
+                <a href="https://discord.com/users/1075132548004466780" target="_blank"><img class="hardwaffl3-3" src="/images/icons8-discord-96.png" alt="Discord" style="width:96px; height:96px;"></a>
+                <a href="https://t.me/hardwaffl3" target="_blank"><img class="hardwaffl3-3" src="/images/icons8-telegram-96.png" alt="Telegram" style="width:96px; height:96px;"></a>
+                <a href="https://twitter.com/HardWaffl3" target="_blank"><img class="hardwaffl3-3" src="/images/icons8-twitterx-96.png" alt="X" style="width:96px; height:96px;"></a>
+                <a href="https://github.com/HardWaffl3" target="_blank"><img class="hardwaffl3-3" src="/images/icons8-github-96.png" alt="Github" style="width:96px; height:96px;"></a>
+            </div>
+
+        </div>
+        
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        let layers = document.querySelectorAll('.background');
+    
+        window.addEventListener('scroll', function() {
+            let offset = window.pageYOffset;
+    
+            layers.forEach(function(layer, index) {
+                let speed = index + 1;
+    
+                let yPos = -(offset * speed / 2);
+                layer.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.auto-position');
+
+    function positionElements() {
+        elements.forEach(element => {
+            const windowHeight = window.innerHeight;
+            const windowWidth = window.innerWidth;
+            const elementHeight = element.offsetHeight;
+            const elementWidth = element.offsetWidth;
+
+            element.style.top = `${windowHeight - elementHeight}px`;
+            element.style.left = `${windowWidth - elementWidth}px`;
+        });
+    }
+
+    positionElements();
+
+    window.addEventListener('resize', positionElements);
+    });
+    </script>
+</html>
