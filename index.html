@@ -4,18 +4,16 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/images/KeepCalmAndStayJUJU.png"/>
         <link rel="stylesheet" href="/style.css"></link>
     </head>
 
     <body style="margin: auto;">
-
-        <div class="background"></div>
-        <div class="background background-2"></div>
         
         <div class="border" style="scale: 65%;">
 
             <div style="text-align: center;" class="noselect">
-                <img class="hardwaffl3" src="/images/HardWaffl3_Boi.jpg" alt="@HardWaffl3" style="width:250px; height:250px;">
+                <img class="hardwaffl3" src="/images/hardwaffl3.jpg" alt="@HardWaffl3" style="width:250px; height:250px;">
             </div>
     
             <div style="text-align: center; font-size: 100%;">
@@ -45,40 +43,5 @@
         </div>
         
     </body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        let layers = document.querySelectorAll('.background');
-    
-        window.addEventListener('scroll', function() {
-            let offset = window.pageYOffset;
-    
-            layers.forEach(function(layer, index) {
-                let speed = index + 1;
-    
-                let yPos = -(offset * speed / 2);
-                layer.style.transform = `translateY(${yPos}px)`;
-            });
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.auto-position');
-
-    function positionElements() {
-        elements.forEach(element => {
-            const windowHeight = window.innerHeight;
-            const windowWidth = window.innerWidth;
-            const elementHeight = element.offsetHeight;
-            const elementWidth = element.offsetWidth;
-
-            element.style.top = `${windowHeight - elementHeight}px`;
-            element.style.left = `${windowWidth - elementWidth}px`;
-        });
-    }
-
-    positionElements();
-
-    window.addEventListener('resize', positionElements);
-    });
-    </script>
+    <script src="/scripts.js"></script>
 </html>
