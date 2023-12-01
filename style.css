@@ -1,9 +1,9 @@
 body, html {
     height: 100%;
-    margin: 0; /* Poprawiono margin na 0 */
+    margin: 0;
     background-color: rgb(55, 55, 55);
     font-family: 'Baloo', sans-serif;
-    overflow: hidden;
+    margin-top: -75px;
 }
 
 .noselect {
@@ -18,6 +18,10 @@ body, html {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+
 }
 
 .hardwaffl3:hover {
@@ -52,15 +56,16 @@ body, html {
     border-radius: 20%;
     display: grid;
     justify-content: center;
-    width: 80%; /* Zmieniono szerokość na 80% */
-    max-width: 500px; /* Dodano maksymalną szerokość */
-    padding: 5vw; /* Zmieniono padding na wartość zależną od szerokości widoku */
+    width: 80%;
+    max-width: 500px;
+    padding: 5vw;
     margin: auto;
-    margin-top: -175px;
 }
 
 h1, h2, h5 {
     color: white;
 }
 
-
+a {
+    color: green;
+}
