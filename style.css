@@ -25,23 +25,39 @@ body, html {
 }
 
 .hardwaffl3-2 {
-    background-color: #242424;
+    background-color: #00000045;
     border: 5px solid rgb(193, 193, 193);
     border-radius: 500px;
     margin-top: 25px;
     padding: 1px 50px;
 }
 
+.hardwaffl3-3 {
+    border: double 5px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 255, 255),#242424);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 35%;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.hardwaffl3-3:hover {
+    transform: scale(1.1);
+}
+
 .border {
     border: 10px solid rgb(163, 163, 163);
-    border-radius: 5%;
+    background-color: #242424;
+    border-radius: 20%;
     display: grid;
     justify-content: center;
     width: 500px;
-    padding: 25px;
+    padding: 50px;
     margin: auto;
+    margin-top: -130px;
 }
 
-h1, h2 {
+h1, h2, h5 {
     color: white;
 }
