@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    margin: 25;
+    margin: 0; /* Poprawiono margin na 0 */
     background-color: rgb(55, 55, 55);
     font-family: 'Baloo', sans-serif;
     overflow: hidden;
@@ -52,10 +52,11 @@ body, html {
     border-radius: 20%;
     display: grid;
     justify-content: center;
-    width: 500px;
-    padding: 50px;
+    width: 80%; /* Zmieniono szerokość na 80% */
+    max-width: 500px; /* Dodano maksymalną szerokość */
+    padding: 5vw; /* Zmieniono padding na wartość zależną od szerokości widoku */
     margin: auto;
-    margin-top: -130px;
+    margin-top: -175px;
 }
 
 h1, h2, h5 {
