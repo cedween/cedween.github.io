@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
     <head>
         <title>@Cedween</title>
@@ -43,4 +44,187 @@
         
     </body>
     <script src="/scripts.js"></script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Cedween</title>
+    <link rel="icon" href="/images/aqua.jpg" type="image/x-icon"> <!-- Dodanie ikony -->
+    <link rel="stylesheet" href="/styles.css"> <!-- Dodano styli dla ekranu ładowania -->
+    <style>
+        /* Importuj czcionkę Ubuntu */
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* Styl dla zdjęć */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            display: flex; /* Ustawienie kontenera na flexbox */
+            justify-content: center; /* Wycentrowanie elementów wzdłuż osi X */
+            gap: 20px; /* Odstęp między zdjęciami */
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        /* Styl dla powiększonego zdjęcia */
+        .modal {
+            display: none; /* Domyślnie ukryj modal */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5); /* Przezroczyste tło */
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #4ddbc8;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+        <span></span>
+    </div>
+</div>
+
+<div id="page" style="display: none;"> <!-- Ukryj stronę, dopóki nie zostanie załadowana -->
+    <header>
+        <h1 id="pageTitle"></h1>
+        <nav>
+            <ul>
+                <li><a href="#about" id="menuAbout"></a></li>
+                <li><a href="#certificates" id="menuCertificates"></a></li>
+                <li><a href="#projects" id="menuProjects"></a></li>
+                <li><a href="#contact" id="menuContact"></a></li>
+                <li class="language-select">
+                    <select id="languageSelect" onchange="changeLanguage(this.value); location.reload();">
+                        <option value="en" selected>English</option>
+                        <option value="pl">Polski</option>
+                    </select>
+                    <span class="custom-arrow"></span>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>            
+
+<main>
+
+    <section id="about">
+        <h2 id="sectionAbout"></h2>
+        <br>
+        <p id="aboutContent"></p>
+    </section>
+
+    <section id="certificates">
+        <h2 id="sectionCertificates"></h2>
+        <br>
+        <div class="image-container">
+            <img src="/images/certificates/ccna.png" alt="Certificate 1" onclick="openModal(this.src)" onmousedown="return false;" oncontextmenu="return false;">
+            <img src="/images/certificates/mtcna.png" alt="Certificate 2" onclick="openModal(this.src)" onmousedown="return false;" oncontextmenu="return false;">
+        </div>
+        <!-- Add more certificate images as needed -->
+    </section>
+
+    <section id="projects">
+        <h2 id="sectionProjects"></h2>
+        <br>
+        <p id="projectsContent"></p>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact"> <!-- Sekcja Contact -->
+        <h2 id="sectionContact"></h2>
+        <br>
+        <p id="contactContent"></p>
+        <br>
+        <p><a href="https://discord.com/users/1075132548004466780" target="_blank">Discord</a></p>
+        <p><a href="https://t.me/cedween" target="_blank">Telegram</a></p>
+        <p><a href="https://twitter.com/c3dween" target="_blank">Twitter/X</a></p>
+        <p><a href="https://github.com/cedween" target="_blank">GitHub</a></p>
+    </section>
+
+    <section id="copyright">
+        <p style="text-align: center;">&copy; <span id="currentYear"></span> | <span id="copyrightContent"></span></p>
+    </section>    
+
+</main>
+
+<script src="/scripts.js" defer></script> <!-- Link do pliku script.js -->
+
+<script>
+    var myVar;
+
+    function loaderFunction() {
+        myVar = setTimeout(showPage, 1400); // Czas w milisekundach, tutaj ustawiono na 1.4 sekundy
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none"; // Ukryj ekran ładowania
+        document.getElementById("page").style.display = "block"; // Pokaż stronę
+    }
+
+    // Funkcja otwierająca modal z powiększonym zdjęciem
+    function openModal(imgSrc) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = imgSrc;
+    }
+
+    // Funkcja zamykająca modal z powiększonym zdjęciem
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    // Funkcja uniemożliwiająca zamknięcie modal po kliknięciu w tło
+    function stopPropagation(event) {
+        event.stopPropagation();
+    }
+
+</script>
+
+<!-- Modal dla powiększonego zdjęcia -->
+<div id="myModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="stopPropagation(event)">
+        <img id="img01">
+    </div>
+</div>
+
+</body>
+>>>>>>> 8d66e60 (A)
 </html>
