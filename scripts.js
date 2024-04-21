@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.auto-position');
-
-    function positionElements() {
-        elements.forEach(element => {
-            const windowHeight = window.innerHeight;
-            const windowWidth = window.innerWidth;
-            const elementHeight = element.offsetHeight;
-            const elementWidth = element.offsetWidth;
-
-            element.style.top = `${windowHeight - elementHeight}px`;
-            element.style.left = `${windowWidth - elementWidth}px`;
-        });
-    }
-
-    positionElements();
-
-    window.addEventListener('resize', positionElements);
-});
-=======
 // Function to load language data from JSON file
 function loadLanguage(lang) {
     fetch(`translations/${lang}.json`)
@@ -104,4 +83,3 @@ document.getElementById('menuContact').addEventListener('click', function() {
 
 // Ustawienie aktualnego roku w elemencie o id="currentYear"
 document.getElementById("currentYear").innerText = new Date().getFullYear();
->>>>>>> 8d66e60 (A)
