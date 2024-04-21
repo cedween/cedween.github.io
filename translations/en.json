@@ -1,0 +1,31 @@
+{
+    "pageTitle": "Home Page",
+    "menu": {
+        "about": "About Cedween",
+        "certificates": "Certificates",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "sections": {
+        "about": {
+            "title": "➤ About Cedween",
+            "content": "My name is Nikolai, a person with a wide range of skills and diverse character traits. My knowledge spans many fields, and my experience in working on various projects makes me versatile and adaptable. I am analytical and meticulous, always striving for the best results. My character traits include patience, willingness to help, and openness to new challenges. I enjoy taking risks and creating innovative solutions. Collaboration with others is important to me as I believe in the power of teamwork."
+        },
+        "certificates": {
+            "title": "➤ Certificates"
+        },
+        "projects": {
+            "title": "➤ Projects",
+            "content": "Soon"
+        }
+        ,
+        "contact": {
+            "title": "➤ Contact",
+            "content": "You can contact through any of the following media:"
+        }
+        ,
+        "copyright": {
+            "content": "Designed by @Cedween"
+        }
+    }
+}
