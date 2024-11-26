@@ -2,7 +2,6 @@
     "pageTitle": "Strona Główna",
     "menu": {
         "about": "O Cedween",
-        "certificates": "Certyfikaty",
         "projects": "Projekty",
         "contact": "Kontakt",
         "copyright": "Prawa Autorskie",
@@ -11,10 +10,7 @@
     "sections": {
         "about": {
             "title": "➤ O Cedween",
-            "content": "Jestem Mikołaj, osoba o wielu umiejętnościach i różnorodnych cechach charakteru. Moja wiedza obejmuje wiele dziedzin, a doświadczenie w pracy nad różnymi projektami sprawia, że jestem wszechstronny i elastyczny. Jestem analityczny i dokładny, zawsze dążąc do osiągnięcia najlepszych rezultatów. Moje cechy charakteru obejmują cierpliwość, chęć pomocy i otwartość na nowe wyzwania. Lubię podejmować ryzyko i tworzyć innowacyjne rozwiązania. Współpraca z innymi jest dla mnie ważna, ponieważ wierzę w siłę pracy zespołowej."
-        },
-        "certificates": {
-            "title": "➤ Certyfikaty"
+            "content": "Jest to osoba o wielu umiejętnościach i różnorodnych cechach charakteru. Jego wiedza obejmuje wiele dziedzin, a doświadczenie w pracy nad różnymi projektami sprawia, że jest on wszechstronny i elastyczny. Jest również analityczny i dokładny, zawsze dążąc do osiągnięcia najlepszych rezultatów. Jego cechy charakteru obejmują cierpliwość, chęć pomocy i otwartość na nowe wyzwania. Lubi podejmować ryzyko i tworzyć innowacyjne rozwiązania. Współpraca z innymi jest dla niego ważna, ponieważ wierzy on w siłę pracy zespołowej."
         },
         "projects": {
             "title": "➤ Projekty"

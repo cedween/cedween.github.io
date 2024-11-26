@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@Cedween - "Home"</title>
-    <link rel="icon" href="/images/BCat.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/Avatar.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
     <style>
         @font-face {
@@ -12,52 +12,6 @@
             src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
             font-weight: 400;
             font-style: normal;
-        }
-
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .image-container img {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-        .modal-content img {
-            width: 100%;
-            height: auto;
-        }
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: #4ddbc8;
-            font-size: 30px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -75,7 +29,6 @@
         <nav>
             <ul>
                 <li><a href="#about" id="menuAbout"></a></li>
-                <li><a href="#certificates" id="menuCertificates"></a></li>
                 <li><a href="#projects" id="menuProjects"></a></li>
                 <li><a href="#contact" id="menuContact"></a></li>
                 <li class="language-select">
@@ -98,19 +51,10 @@
         <p id="aboutContent"></p>
     </section>
 
-    <section id="certificates">
-        <h2 id="sectionCertificates"></h2>
-        <br>
-        <div class="image-container">
-            <img src="/images/certificates/ccna.png" alt="Certificate 1" onclick="openModal(this.src)" onmousedown="return false;" oncontextmenu="return false;">
-            <img src="/images/certificates/mtcna.png" alt="Certificate 2" onclick="openModal(this.src)" onmousedown="return false;" oncontextmenu="return false;">
-        </div>
-    </section>
-
     <section id="projects">
         <h2 id="sectionProjects"></h2>
         <br>
-        <p><a href="http://127.0.0.1:5500/pages/highschool-projects/projects.html" target="_blank">HighSchool</a> - (EN)</p>
+        <p><a href="/pages/projects.html" target="_blank">Useful Stuff</a> - (EN)</p>
     </section>
 
     <section id="contact">
@@ -143,31 +87,7 @@
         document.getElementById("loader").style.display = "none";
         document.getElementById("page").style.display = "block";
     }
-
-    function openModal(imgSrc) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("img01");
-        modal.style.display = "block";
-        modalImg.src = imgSrc;
-    }
-
-    function closeModal() {
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-    }
-
-    function stopPropagation(event) {
-        event.stopPropagation();
-    }
-
 </script>
-
-<div id="myModal" class="modal" onclick="closeModal()">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div class="modal-content" onclick="stopPropagation(event)">
-        <img id="img01">
-    </div>
-</div>
 
 </body>
 </html>
