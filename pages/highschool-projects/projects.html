@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Cedween - "HighSchool Projects"</title>
+    <link rel="icon" href="/images/BCat.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+        <span></span>
+    </div>
+</div>
+
+<div id="page" style="display: none;">       
+    <header>
+        <h1>HighSchool Projects</h1>
+    </header>
+
+<main>
+
+    <section id="links">
+        <h2>➤ Web Apps</h2>
+        <br>
+        <p><a href="/pages/highschool-projects/page/web-calculator.html">Web Calculator</a></p>
+        <p><a href="/pages/highschool-projects/page/web-number-system-calculator.html">Web Number System Calculator</a></p>
+    </section>
+
+</main>
+
+<script src="/scripts.js" defer></script>
+
+<script>
+    var myVar;
+
+    function loaderFunction() {
+        myVar = setTimeout(showPage, 1400);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("page").style.display = "block";
+    }
+</script>
+</body>
+</html>

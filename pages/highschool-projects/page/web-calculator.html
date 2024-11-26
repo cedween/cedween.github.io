@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Cedween - "Web Calculator"</title>
+    <link rel="icon" href="/images/BCat.jpg" type="image/x-icon"> <!-- Dodanie ikony -->
+    <link rel="stylesheet" href="/styles.css"> <!-- Dodano styli dla ekranu ładowania -->
+    <style>
+        /* Importuj czcionkę Ubuntu */
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        text {
+            color: #4ddbc8;
+        }
+    </style>
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+        <span></span>
+    </div>
+</div>
+
+<div id="page" style="display: none;"> <!-- Ukryj stronę, dopóki nie zostanie załadowana -->         
+    <header>
+        <h1 style="text-align: center;">Web Calculator</h1>
+    </header>
+
+<main>
+
+    <section id="calculator">
+        <table>
+            <tr>
+                <p style="padding-bottom: 10px;">Type A Number: <input type="number" id="A" size="7"></p>
+                <p style="padding-bottom: 10px;">Type B Number: <input type="number" id="B" size="7"></p>
+            </tr>
+            <tr>
+                <select id="Calculation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </tr>
+            <tr>
+                <input type="button" name="Calculate" value="Calculate" onclick="calculate()" style="float: right;">
+            </tr>
+            <tr>
+                <br><br>
+                <p id="resultText" style="display: none;">Result: <text id="results" style="color: #46dd66;"></text></p>
+            </tr>
+        </table>
+    </section>
+
+    <section id="back">
+        <a href="/pages/highschool-projects/projects.html"><button style="width: 50%; height: 120%; margin-left: 25%;">Back</button></a>
+    </section>
+
+</main>
+
+<script src="/pages/highschool-projects/page/scripts/Calculator.js" defer></script>
+
+<script>
+    var myVar;
+
+    function loaderFunction() {
+        myVar = setTimeout(showPage, 1400); // Czas w milisekundach, tutaj ustawiono na 1.4 sekundy
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none"; // Ukryj ekran ładowania
+        document.getElementById("page").style.display = "block"; // Pokaż stronę
+    }
+</script>
+</body>
+</html>

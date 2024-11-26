@@ -4,7 +4,9 @@
         "about": "O Cedween",
         "certificates": "Certyfikaty",
         "projects": "Projekty",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "copyright": "Prawa Autorskie",
+        "links": "Linki"
     },
     "sections": {
         "about": {
@@ -15,8 +17,7 @@
             "title": "➤ Certyfikaty"
         },
         "projects": {
-            "title": "➤ Projekty",
-            "content": "Wkrótce"
+            "title": "➤ Projekty"
         }
         ,
         "contact": {

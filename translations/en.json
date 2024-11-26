@@ -4,7 +4,9 @@
         "about": "About Cedween",
         "certificates": "Certificates",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "copyright": "Copyright",
+        "links": "Links"
     },
     "sections": {
         "about": {
@@ -15,8 +17,7 @@
             "title": "➤ Certificates"
         },
         "projects": {
-            "title": "➤ Projects",
-            "content": "Soon"
+            "title": "➤ Projects"
         }
         ,
         "contact": {

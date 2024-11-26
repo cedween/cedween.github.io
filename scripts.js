@@ -1,6 +1,6 @@
 // Function to load language data from JSON file
 function loadLanguage(lang) {
-    fetch(`translations/${lang}.json`)
+    fetch(`/translations/${lang}.json`)
         .then(response => response.json())
         .then(data => {
             // Update page content with translated text
@@ -13,7 +13,6 @@ function loadLanguage(lang) {
             document.getElementById('aboutContent').innerText = data.sections.about.content;
             document.getElementById('sectionCertificates').innerText = data.sections.certificates.title;
             document.getElementById('sectionProjects').innerText = data.sections.projects.title;
-            document.getElementById('projectsContent').innerText = data.sections.projects.content;
             document.getElementById('sectionContact').innerText = data.sections.contact.title;
             document.getElementById('contactContent').innerText = data.sections.contact.content;
             document.getElementById('copyrightContent').innerText = data.sections.copyright.content;

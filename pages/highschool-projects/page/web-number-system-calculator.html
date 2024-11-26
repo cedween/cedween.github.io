@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Cedween - "Number System Calculator"</title>
+    <link rel="icon" href="/images/BCat.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url('/fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        text {
+            color: #4ddbc8;
+        }
+        .result-text {
+            color: #46dd66;
+        }
+    </style>
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+        <span></span>
+    </div>
+</div>
+
+<div id="page" style="display: none;">
+    <header>
+        <h1 style="text-align: center;">Number System Calculator</h1>
+    </header>
+
+<main>
+
+    <section id="calculator">
+        <table>
+            <tr>
+                <p style="padding-bottom: 10px;">Type a Number: <input type="text" id="numberInput" size="10"></p>
+            </tr>
+            <tr>
+                <input type="button" name="Convert" value="Convert" onclick="convertNumber()" style="float: right;">
+            </tr>
+            <tr>
+                <br><br>
+                <p id="binaryResult" style="display: none;">Binary: <text id="binary" class="result-text"></text></p>
+                <p id="octalResult" style="display: none;">Octal: <text id="octal" class="result-text"></text></p>
+                <p id="decimalResult" style="display: none;">Decimal: <text id="decimal" class="result-text"></text></p>
+                <p id="hexadecimalResult" style="display: none;">Hexadecimal: <text id="hexadecimal" class="result-text"></text></p>
+            </tr>
+        </table>
+    </section>
+
+    <section id="back">
+        <a href="http://127.0.0.1:5500/pages/highschool-projects/projects.html"><button style="width: 50%; height: 120%; margin-left: 25%;">Back</button></a>
+    </section>
+
+</main>
+
+<script src="/pages/highschool-projects/page/scripts/numberSystemCalculator.js" defer></script>
+
+<script>
+    var myVar;
+
+    function loaderFunction() {
+        myVar = setTimeout(showPage, 1400);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("page").style.display = "block";
+    }
+</script>
+</body>
+</html>
