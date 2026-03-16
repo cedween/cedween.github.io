@@ -4,10 +4,13 @@ function loadLanguage(lang) {
         .then(data => {
             document.getElementById('pageTitle').innerText = data.pageTitle;
             document.getElementById('menuAbout').innerText = data.menu.about;
+            document.getElementById('menuRolesAndSpecializations').innerText = data.menu.rolesAndSpecializations;
             document.getElementById('menuProjects').innerText = data.menu.projects;
             document.getElementById('menuContact').innerText = data.menu.contact;
             document.getElementById('sectionAbout').innerText = data.sections.about.title;
             document.getElementById('aboutContent').innerText = data.sections.about.content;
+            document.getElementById('sectionRolesAndSpecializations').innerText = data.sections.rolesAndSpecializations.title;
+            document.getElementById('rolesAndSpecializationsContent').innerText = data.sections.rolesAndSpecializations.content;
             document.getElementById('sectionProjects').innerText = data.sections.projects.title;
             document.getElementById('sectionContact').innerText = data.sections.contact.title;
             document.getElementById('contactContent').innerText = data.sections.contact.content;
@@ -53,6 +56,10 @@ function scrollToSection(sectionId) {
 
 document.getElementById('menuAbout').addEventListener('click', function() {
     scrollToSection('about');
+});
+
+document.getElementById('menuRolesAndSpecializations').addEventListener('click', function() {
+    scrollToSection('rolesandspecializations');
 });
 
 document.getElementById('menuProjects').addEventListener('click', function() {

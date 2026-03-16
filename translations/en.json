@@ -2,6 +2,7 @@
     "pageTitle": "Cedween's Page",
     "menu": {
         "about": "About Cedween",
+        "rolesAndSpecializations": "Roles and Specializations",
         "projects": "Projects",
         "contact": "Contact",
         "copyright": "Copyright",
@@ -10,12 +11,15 @@
     "sections": {
         "about": {
             "title": "➤ About Cedween",
-            "content": "He is a person of many skills and diverse character traits. His knowledge spans many disciplines and his experience of working on a variety of projects makes him versatile and flexible. He is also analytical and thorough, always striving for the best results. His character traits include patience, willingness to help and openness to new challenges. He enjoys taking risks and creating innovative solutions. Collaboration with others is important to him, as he believes in the power of teamwork."
+            "content": "Hi! I’m Cedween, an IT enthusiast and content creator at heart. I love building software that’s both functional and visually appealing. My projects span a variety of technologies, and my goal is always to deliver meaningful, valuable solutions for the community.\n\nOn a daily basis I focus on the areas listed below, including a brief overview of the roles I work in and the technologies I use."
+        },
+        "rolesAndSpecializations": {
+            "title": "➤ Roles and Specializations",
+            "content": "Server Owner"
         },
         "projects": {
             "title": "➤ Projects"
-        }
-        ,
+        },
         "contact": {
             "title": "➤ Contact",
             "content": "You can contact through any of the following media:"
