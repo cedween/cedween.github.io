@@ -2,7 +2,7 @@
     "pageTitle": "Cedween's Page",
     "menu": {
         "about": "About Cedween",
-        "rolesAndSpecializations": "Roles and Specializations",
+        "rolesOrSpecializations": "Roles or Specializations",
         "projects": "Projects",
         "contact": "Contact",
         "copyright": "Copyright",
@@ -13,8 +13,8 @@
             "title": "➤ About Cedween",
             "content": "Hi! I’m Cedween, an IT enthusiast and content creator at heart. I love building software that’s both functional and visually appealing. My projects span a variety of technologies, and my goal is always to deliver meaningful, valuable solutions for the community.\n\nOn a daily basis I focus on the areas listed below, including a brief overview of the roles I work in and the technologies I use."
         },
-        "rolesAndSpecializations": {
-            "title": "➤ Roles and Specializations",
+        "rolesOrSpecializations": {
+            "title": "➤ Roles or Specializations",
             "content": "SCP:SL Server Host - SCP: Polska Izolatka\nLead Developer of the Discord Bot - Polish Memes"
         },
         "projects": {
